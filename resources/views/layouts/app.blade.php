@@ -28,15 +28,164 @@
 
   {{-- Custom CSS --}}
   <link rel="stylesheet" href="{{ asset('css/scroll.css') }}">
+  <style>
+    :root {
+      --primary-color: #ff6b6b;
+      --secondary-color: #4ecdc4;
+    }
+
+    /* Custom CSS Overrides */
+    .bg-primary {
+      background-color: var(--primary-color) !important;
+    }
+
+    .text-primary {
+      color: var(--primary-color) !important;
+    }
+
+    .border-primary {
+      border-color: var(--primary-color) !important;
+    }
+
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+
+    .btn-primary:hover {
+      background-color: #ff5252;
+      border-color: #ff5252;
+    }
+
+    .navbar {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+      transition: transform 0.2s;
+      border: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .footer {
+      background: linear-gradient(45deg, #333, #222) !important;
+    }
+
+    .img-zoomin {
+      transition: transform 0.3s;
+    }
+
+    .img-zoomin:hover {
+      transform: scale(1.05);
+    }
+
+    .nav-link {
+      position: relative;
+      padding: 0.5rem 1rem;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--primary-color);
+      transition: width 0.3s;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .search-box {
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .trending-section {
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    }
+
+    .social-icons a {
+      transition: transform 0.2s;
+    }
+
+    .social-icons a:hover {
+      transform: translateY(-3px);
+    }
+
+    /* Enhanced article card design */
+    .article-card {
+      border-radius: 15px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .article-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .article-meta {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* Enhanced category pills */
+    .category-pill {
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+
+    /* Animated back to top button */
+    .back-to-top {
+      opacity: 0;
+      transition: opacity 0.3s, transform 0.3s;
+      transform: translateY(100px);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Author section enhancement */
+    .author-card {
+      background: linear-gradient(45deg, #f8f9fa, #fff);
+      border-radius: 15px;
+      padding: 2rem;
+    }
+
+    .author-image {
+      border: 3px solid var(--primary-color);
+      padding: 3px;
+      border-radius: 50%;
+    }
+
+  </style>
+
 </head>
 
 <body>
-  {{-- <!-- Spinner Start -->
-    <div id="spinner"
-        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End --> --}}
+  <!-- Spinner Start -->
+  <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
 
   <!-- Navbar start -->
   <div class="container-fluid sticky-top px-0">
@@ -92,16 +241,6 @@
               </button>
             </div>
             <div class="d-flex flex-nowrap border-top pt-3 pt-xl-0 mx-2">
-              <div class="d-flex">
-                <img src="{{ asset('th/img/weather-icon.png') }}" class="img-fluid w-100 ms-2" alt="" />
-                <div class="d-flex align-items-center">
-                  <strong class="fs-4 text-secondary">TEMP</strong>
-                  <div class="d-flex flex-column ms-2" style="width: 150px">
-                    <span class="text-body">YOUR CITY</span>
-                    <small>YOUR DATE</small>
-                  </div>
-                </div>
-              </div>
               <button class="btn-search btn border border-primary btn-md-square rounded-circle bg-white my-auto" data-bs-toggle="modal" data-bs-target="#searchModal">
                 <i class="fas fa-search text-primary"></i>
               </button>
@@ -144,13 +283,13 @@
           <div class="footer-item-1">
             <h4 class="mb-4 text-white">Get In Touch</h4>
             <p class="text-secondary line-h">
-              Address: <span class="text-white">Jakarta</span>
+              Address: <span class="text-white">Magelang</span>
             </p>
             <p class="text-secondary line-h">
-              Email: <span class="text-white">theun@gmail.com</span>
+              Email: <span class="text-white">meowwoof@gmail.com</span>
             </p>
             <p class="text-secondary line-h">
-              Phone: <span class="text-white">+62</span>
+              Phone: <span class="text-white">+62845-9876-1223</span>
             </p>
             <div class="d-flex line-h">
               <a class="btn btn-light me-2 btn-md-square rounded-circle" href="#"><i class="fab fa-twitter text-dark"></i></a>
@@ -254,26 +393,6 @@
     </div>
   </div>
   <!-- Footer End -->
-
-  <!-- Copyright Start -->
-  <div class="container-fluid copyright bg-dark py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-          <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Theun</a>, All right reserved.</span>
-        </div>
-        <div class="col-md-6 my-auto text-center text-md-end text-white">
-          <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-          <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-          <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-          Designed By
-          <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-          Distributed By <a href="https://themewagon.com">ThemeWagon</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Copyright End -->
 
   <!-- Back to Top -->
   <a href="#" class="btn btn-primary border-2 border-white rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>

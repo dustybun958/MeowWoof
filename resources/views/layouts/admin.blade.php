@@ -247,7 +247,7 @@
             </ul>
           </nav> --}}
           <div class="copyright">
-            2024, made with <i class="fa fa-heart heart text-danger"></i> by
+            2025, made with <i class="fa fa-heart heart text-danger"></i> by
             <a href="#">MeowWoof</a>
           </div>
           {{-- <div>

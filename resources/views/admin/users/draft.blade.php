@@ -118,7 +118,7 @@
                                             <th>Kategori</th>
                                             <th>Terakhir Diperbarui</th>
                                             <th>Status</th>
-                                            <th style="width: 5%">Tindakan</th>
+                                            <th style="width: 5%">Aksi</th>
                                         </tr>
                                     </thead>
                                     <tfoot>
@@ -129,7 +129,7 @@
                                             <th>Kategori</th>
                                             <th>Terakhir Diperbarui</th>
                                             <th>Status</th>
-                                            <th>Tindakan</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </tfoot>
                                     <tbody>

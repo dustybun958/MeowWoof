@@ -113,7 +113,7 @@
           {{-- <img src="{{ asset('admin/img/kaiadmin/meowwoof.svg') }}" alt="MeowWoof Logo" class="img-fluid mb-4 pet-image"> --}}
           <img src="{{ asset('img/bg-login.png') }}" alt="bg-login" class="img-fluid mb-4 pet-image">
           <h1 class="display-4 text-white mb-3 fw-light">MeowWoof</h1>
-          <p class="lead text-white-50">A place where pet stories come alive</p>
+          <p class="lead text-white-50">A place where you can share your stories</p>
           <div class="floating-pets">
             <div class="blob"></div>
           </div>

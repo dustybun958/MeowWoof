@@ -217,7 +217,7 @@
         <div class="illustration-content text-center">
           <img src="{{ asset('img/bg-login.png') }}" alt="bg-login" class="img-fluid mb-4 pet-image">
           <h1 class="display-4 text-white mb-3 fw-light">MeowWoof</h1>
-          <p class="lead text-white-50">A place where pet stories come alive</p>
+          <p class="lead text-white-50">A place where you can share your stories</p>
           <div class="floating-pets">
             <div class="blob"></div>
           </div>
@@ -229,7 +229,7 @@
         <div class="login-content">
           <div class="text-center mb-5">
             <img src="{{ asset('admin/img/kaiadmin/meowwoof.svg') }}">
-            <p class="mt-3 text-muted">Join our pet-loving community! 🐾</p>
+            <p class="mt-3 text-muted">Join our stories community! 🐾</p>
           </div>
 
           <!-- Alert for errors -->

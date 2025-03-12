@@ -15,6 +15,10 @@ Route::get('/stories/{stories}/show', [StoriesController::class, 'show'])->name(
 Route::post('/stories/{stories}/like', [LikeController::class, 'likeStories'])->name('stories.like');
 Route::get('/stories/{categories}/category', [StoriesController::class, 'viewCategory'])->name('stories.viewCategory');
 
+// reset password
+Route::get('/reset-password', [LoginController::class, 'showResetForm'])->name('password.request');
+Route::post('/reset-password', [LoginController::class, 'resetPassword'])->name('password.update');
+
 // Guest
 Route::middleware(['guest'])->group(function () {
     Route::get('/login', [LoginController::class, 'login'])->name('login');

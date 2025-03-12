@@ -60,7 +60,7 @@ class LoginController extends Controller
     {
         if (Auth::check()) {
             $userId = Auth::user()->id;
-            
+
             Cache::forget('user-is-online-' . $userId);
             Cache::forget('user-online-expiration-' . $userId);
 
@@ -120,5 +120,28 @@ class LoginController extends Controller
                 'message' => $e->getMessage()
             ]);
         }
+    }
+
+    public function showResetForm()
+    {
+        return view('auth.reset-password');
+    }
+
+    public function resetPassword(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email|exists:users,email',
+            'password' => 'required|min:6|confirmed',
+        ]);
+
+        $user = User::where('email', $request->email)->first();
+        if ($user) {
+            $user->update([
+                'password' => Hash::make($request->password),
+            ]);
+            return redirect()->route('login')->with('status', 'Password berhasil direset.');
+        }
+
+        return back()->withErrors(['email' => 'Email tidak ditemukan.']);
     }
 }

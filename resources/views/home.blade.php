@@ -1380,7 +1380,8 @@
   <section id="tentang" class="about-section">
     <div class="container">
       <div class="section-header text-center">
-        <h2>Tentang MeowWoof</h2>
+        <h2>Tentang <span class="text-gradient">MeowWoof</span></h2>
+
         <p>Platform yang menghubungkan para penulis cerita dengan pembaca dari seluruh dunia</p>
       </div>
       <div class="row mt-4 mt-md-5">
@@ -1481,6 +1482,7 @@
       <div class="row align-items-center">
         <div class="col-lg-8 mb-4 mb-lg-0">
           <h2>Bergabunglah dengan Komunitas MeowWoof Hari Ini!</h2>
+
           <p>Mulai bagikan cerita Anda dan temukan inspirasi dari penulis lainnya.</p>
         </div>
         <div class="col-lg-4 text-center text-lg-end">
@@ -1555,7 +1557,9 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-          <h3 class="footer-logo">MeowWoof</h3>
+          <h3 class="footer-logo">
+            <spanclass="text-gradient">MeowWoof</span>
+          </h3>
           <p>Platform untuk semua kalangan berbagi cerita, pengalaman, dan kreativitas mereka dengan dunia.</p>
           <div class="footer-social">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -1593,7 +1597,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 MeowWoof. Hak Cipta Dilindungi.</p>
+        <p>&copy; 2025 <span class="text-gradient">MeowWoof</span>. Hak Cipta Dilindungi.</p>
+
       </div>
     </div>
   </footer>

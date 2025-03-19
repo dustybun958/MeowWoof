@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MeowWoof - Platform Kontribusi Anak</title>
+  <title>MeowWoof - Platform Kontribusi Cerita</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
@@ -1326,10 +1326,10 @@
         <div class="col-lg-6">
           <div class="hero-content">
             <div class="hero-badge">
-              <span>Platform Kreativitas Anak #1 di Indonesia</span>
+              <span>Platform Kontribusi Cerita #1 di Indonesia</span>
             </div>
-            <h1 class="hero-title">Bersama Anak-Anak, <span class="text-gradient">Ciptakan Dunia</span> yang Lebih Baik</h1>
-            <p class="hero-subtitle">Platform untuk anak-anak berbagi cerita, pengalaman, dan kreativitas mereka dengan dunia. Bergabunglah dengan ribuan anak berbakat lainnya!</p>
+            <h1 class="hero-title">Bagikan <span class="text-gradient">Kisah Unikmu</span> dengan Dunia</h1>
+            <p class="hero-subtitle">Platform untuk semua kalangan berbagi cerita, pengalaman, dan kreativitas mereka. Bergabunglah dengan ribuan kontributor berbakat lainnya!</p>
             <div class="hero-buttons">
               <button class="btn btn-primary btn-lg pulse-btn" onclick="location.href='{{route('register')}}'">
                 Mulai Sekarang
@@ -1343,11 +1343,11 @@
               </div>
               <div class="stat-item">
                 <span class="stat-number">25K+</span>
-                <span class="stat-label">Karya</span>
+                <span class="stat-label">Cerita</span>
               </div>
               <div class="stat-item">
-                <span class="stat-number">100+</span>
-                <span class="stat-label">Sekolah</span>
+                <span class="stat-number">5M+</span>
+                <span class="stat-label">Pembaca</span>
               </div>
             </div>
           </div>
@@ -1356,13 +1356,13 @@
         <div class="col-lg-6">
           <div class="hero-image-container">
             <div class="hero-image main-image">
-              <img src="https://images.unsplash.com/photo-1560969184-10fe8719e047?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Anak-anak bahagia" class="img-fluid rounded-4 shadow-lg">
+              <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Menulis cerita" class="img-fluid rounded-4 shadow-lg">
             </div>
             <div class="hero-image floating-image-1">
-              <img src="https://images.unsplash.com/photo-1475275166152-f1e8005f9854?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Anak bermain musik" class="img-fluid rounded-4 shadow-lg">
+              <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=1168&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Membaca buku" class="img-fluid rounded-4 shadow-lg">
             </div>
             <div class="hero-image floating-image-2">
-              <img src="https://images.unsplash.com/photo-1585435656462-8abb322cbb68?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Anak laki-laki melukis" class="img-fluid rounded-4 shadow-lg">
+              <img src="https://images.unsplash.com/photo-1520697830682-bbb6e85e2b0b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Laptop dan kopi" class="img-fluid rounded-4 shadow-lg">
             </div>
             <div class="hero-blob"></div>
           </div>
@@ -1381,16 +1381,16 @@
     <div class="container">
       <div class="section-header text-center">
         <h2>Tentang MeowWoof</h2>
-        <p>Platform yang menginspirasi anak-anak untuk berbagi dan berkontribusi</p>
+        <p>Platform yang menghubungkan para penulis cerita dengan pembaca dari seluruh dunia</p>
       </div>
       <div class="row mt-4 mt-md-5">
         <div class="col-md-4 mb-3">
           <div class="feature-card">
             <div class="feature-icon">
-              <i class="fas fa-heart"></i>
+              <i class="fas fa-feather-alt"></i>
             </div>
-            <h3>Inspirasi</h3>
-            <p>Menginspirasi anak-anak untuk mengekspresikan kreativitas mereka melalui cerita dan seni.</p>
+            <h3>Tulis Cerita</h3>
+            <p>Bagikan cerita, pengalaman, atau karya fiksi Anda dengan audiens yang lebih luas melalui platform kami.</p>
           </div>
         </div>
         <div class="col-md-4 mb-3">
@@ -1399,7 +1399,7 @@
               <i class="fas fa-users"></i>
             </div>
             <h3>Komunitas</h3>
-            <p>Membangun komunitas yang aman dan mendukung untuk anak-anak berbagi pengalaman mereka.</p>
+            <p>Bergabunglah dengan komunitas penulis yang beragam dan saling mendukung untuk pertumbuhan bersama.</p>
           </div>
         </div>
         <div class="col-md-4 mb-3">
@@ -1407,8 +1407,8 @@
             <div class="feature-icon">
               <i class="fas fa-lightbulb"></i>
             </div>
-            <h3>Kreativitas</h3>
-            <p>Mendorong kreativitas dan imajinasi anak-anak melalui berbagai aktivitas interaktif.</p>
+            <h3>Temukan Inspirasi</h3>
+            <p>Temukan karya-karya dari penulis berbakat dari berbagai latar belakang dan genre cerita.</p>
           </div>
         </div>
       </div>
@@ -1419,8 +1419,8 @@
   <section id="cerita" class="stories-section">
     <div class="container">
       <div class="section-header text-center">
-        <h2>Cerita <span class="text-gradient">Trending</span> Kontributor Kami</h2>
-        <p>Kisah inspiratif dari anak-anak yang telah berkontribusi</p>
+        <h2>Cerita <span class="text-gradient">Trending</span> dari Kontributor</h2>
+        <p>Kisah-kisah menarik yang paling banyak dibaca minggu ini</p>
       </div>
       <div class="row mt-4 mt-md-5">
         @foreach ($popularStories->take(3) as $stories)
@@ -1438,32 +1438,6 @@
           </div>
         </div>
         @endforeach
-        {{-- <div class="col-lg-4 col-md-6 mb-3">
-          <div class="story-card">
-            <div class="story-image">
-              <img src="https://images.unsplash.com/photo-1522505449726-e148c41c2a8d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8" alt="Anak laki-laki melukis" class="img-fluid">
-            </div>
-            <div class="story-content">
-              <h3>Budi Santoso</h3>
-              <p class="story-age">8 Tahun, Surabaya</p>
-              <p class="story-text">"Saya suka menggambar anjing dan kucing. Di MeowWoof, banyak teman yang memberikan komentar positif pada gambar saya!"</p>
-              <button class="btn btn-sm btn-outline-primary read-more-btn">Baca Selengkapnya</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-          <div class="story-card">
-            <div class="story-image">
-              <img src="https://images.unsplash.com/photo-1475275166152-f1e8005f9854?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Anak bermain musik" class="img-fluid">
-            </div>
-            <div class="story-content">
-              <h3>Anisa Rahma</h3>
-              <p class="story-age">12 Tahun, Bandung</p>
-              <p class="story-text">"MeowWoof membantu saya membagikan lagu yang saya ciptakan tentang hewan peliharaan. Sekarang saya punya banyak penggemar!"</p>
-              <button class="btn btn-sm btn-outline-primary read-more-btn">Baca Selengkapnya</button>
-            </div>
-          </div>
-        </div> --}}
       </div>
       <div class="text-center mt-4">
         <button class="btn btn-primary load-more-btn" onclick="location.href='{{ route('indexStories') }}'">Lihat Lebih Banyak Cerita</button>
@@ -1475,27 +1449,27 @@
   <section id="galeri" class="gallery-section">
     <div class="container">
       <div class="section-header text-center">
-        <h2>Galeri Kreativitas</h2>
-        <p>Karya-karya menakjubkan dari kontributor muda kami</p>
+        <h2>Galeri Karya</h2>
+        <p>Ilustrasi dan visual pendukung dari cerita-cerita terbaik</p>
       </div>
       <div class="row mt-4 mt-md-5 gallery-container">
         <div class="col-md-4 col-6 gallery-item">
-          <img src="https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?ixlib=rb-1.2.1&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8" alt="Karya anak" class="img-fluid">
+          <img src="https://images.unsplash.com/photo-1467951591042-f388365db261?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Buku terbuka" class="img-fluid">
         </div>
         <div class="col-md-4 col-6 gallery-item">
-          <img src="https://images.unsplash.com/photo-1522505449726-e148c41c2a8d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8" alt="Karya anak" class="img-fluid">
+          <img src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Menulis di jurnal" class="img-fluid">
         </div>
         <div class="col-md-4 col-6 gallery-item">
-          <img src="https://images.unsplash.com/photo-1517971053567-8bde93bc6a58?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Karya anak" class="img-fluid">
+          <img src="https://images.unsplash.com/photo-1532153975070-2e9ab71f1b14?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Perpustakaan" class="img-fluid">
         </div>
         <div class="col-md-4 col-6 gallery-item">
-          <img src="https://images.unsplash.com/photo-1518214598173-1666bc921d66?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Karya anak" class="img-fluid">
+          <img src="https://images.unsplash.com/photo-1476275466078-4007374efbbe?q=80&w=1229&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Penulis" class="img-fluid">
         </div>
         <div class="col-md-4 col-6 gallery-item">
-          <img src="https://images.unsplash.com/photo-1511551203524-9a24350a5771?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Karya anak" class="img-fluid">
+          <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Buku fiksi" class="img-fluid">
         </div>
         <div class="col-md-4 col-6 gallery-item">
-          <img src="https://images.unsplash.com/photo-1510337550647-e84f83e341ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Karya anak" class="img-fluid">
+          <img src="https://images.unsplash.com/photo-1499257398700-43669759a540?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tumpukan buku" class="img-fluid">
         </div>
       </div>
     </div>
@@ -1507,11 +1481,10 @@
       <div class="row align-items-center">
         <div class="col-lg-8 mb-4 mb-lg-0">
           <h2>Bergabunglah dengan Komunitas MeowWoof Hari Ini!</h2>
-          <p>Biarkan anak-anak mengekspresikan kreativitas mereka dan berbagi dengan dunia.</p>
+          <p>Mulai bagikan cerita Anda dan temukan inspirasi dari penulis lainnya.</p>
         </div>
         <div class="col-lg-4 text-center text-lg-end">
           <a href="{{route('register')}}"> <button class="btn btn-primary btn-lg pulse-btn" data-bs-toggle="modal" data-bs-target="#registerModal">Daftar Sekarang</button></a>
-
         </div>
       </div>
     </div>
@@ -1531,7 +1504,7 @@
               <i class="fas fa-map-marker-alt"></i>
               <div>
                 <h3>Alamat</h3>
-                <p>Jl. Hewan Peliharaan No. 123, Jakarta Selatan, Indonesia</p>
+                <p>Jl. Cerita Indah No. 123, Jakarta Selatan, Indonesia</p>
               </div>
             </div>
             <div class="contact-item">
@@ -1583,7 +1556,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
           <h3 class="footer-logo">MeowWoof</h3>
-          <p>Platform untuk anak-anak berbagi cerita, pengalaman, dan kreativitas mereka dengan dunia.</p>
+          <p>Platform untuk semua kalangan berbagi cerita, pengalaman, dan kreativitas mereka dengan dunia.</p>
           <div class="footer-social">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>

@@ -707,6 +707,13 @@
       color: #666;
       margin-bottom: 15px;
       font-size: 0.9rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: 4.5rem;
+
     }
 
     @media (min-width: 768px) {

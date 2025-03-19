@@ -31,9 +31,14 @@
   {{-- Custom CSS --}}
   <link rel="stylesheet" href="{{ asset('css/scroll.css') }}">
   <style>
+    /* Global Styles */
     :root {
       --primary-color: #ff6b6b;
       --secondary-color: #4ecdc4;
+      --accent-color: #ffe66d;
+      /* --dark-color: #2d3436; */
+      --light-color: #f9f9f9;
+      --font-primary: 'Nunito', sans-serif;
     }
 
     /* Custom CSS Overrides */
@@ -178,15 +183,7 @@
       border-radius: 50%;
     }
 
-    /* Global Styles */
-    :root {
-      --primary-color: #ff6b6b;
-      --secondary-color: #4ecdc4;
-      --accent-color: #ffe66d;
-      --dark-color: #2d3436;
-      --light-color: #f9f9f9;
-      --font-primary: 'Nunito', sans-serif;
-    }
+
 
     body {
       font-family: var(--font-primary);

@@ -36,6 +36,27 @@ class StoriesController extends Controller
         ));
     }
 
+    public function indexStories()
+    {
+        $latestStories = Stories::where('status', 'Accept')->latest()->get();
+        $topStories = Stories::where('status', 'Accept')->orderBy('views', 'desc')->get();
+        $popularStories = Stories::where('status', 'Accept')
+            ->withCount('likes')
+            ->orderBy('likes_count', 'desc')
+            ->get();
+        $topCategory = Category::orderBy('views', 'desc')
+            ->orderBy('created_at', 'desc')
+            ->get();
+
+        return view('stories', compact(
+            'latestStories',
+            'topStories',
+            'popularStories',
+            'topCategory',
+        ));
+    }
+
+
     public function manage()
     {
         $allStories = Stories::with('category')->get();
@@ -120,6 +141,7 @@ class StoriesController extends Controller
 
         return view('detail', compact('stories', 'randomStories'));
     }
+
 
     /**
      * Show the form for editing the specified resource.

@@ -11,6 +11,7 @@ use App\Http\Controllers\NotificationController;
 
 // All
 Route::get('/', [StoriesController::class, 'index'])->name('index');
+Route::get('/storiesAll', [StoriesController::class, 'indexStories'])->name('indexStories');
 Route::get('/stories/{stories}/show', [StoriesController::class, 'show'])->name('stories.show');
 Route::post('/stories/{stories}/like', [LikeController::class, 'likeStories'])->name('stories.like');
 Route::get('/stories/{categories}/category', [StoriesController::class, 'viewCategory'])->name('stories.viewCategory');

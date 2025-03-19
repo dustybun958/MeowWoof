@@ -1419,24 +1419,26 @@
   <section id="cerita" class="stories-section">
     <div class="container">
       <div class="section-header text-center">
-        <h2>Cerita Kontributor Kami</h2>
+        <h2>Cerita <span class="text-gradient">Trending</span> Kontributor Kami</h2>
         <p>Kisah inspiratif dari anak-anak yang telah berkontribusi</p>
       </div>
       <div class="row mt-4 mt-md-5">
+        @foreach ($popularStories->take(3) as $stories)
         <div class="col-lg-4 col-md-6 mb-3">
           <div class="story-card">
             <div class="story-image">
-              <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Anak perempuan menulis" class="img-fluid">
+              <img src="{{ $stories->image ? asset('storage/images/' . $stories->image) : asset('img/noimg.jpg') }}" alt="" class="img-fluid">
             </div>
             <div class="story-content">
-              <h3>Siti Nurhaliza</h3>
-              <p class="story-age">10 Tahun, Jakarta</p>
-              <p class="story-text">"Saya senang bisa berbagi cerita tentang petualangan saya dengan kucing peliharaan. MeowWoof membuat saya percaya diri untuk menulis!"</p>
-              <button class="btn btn-sm btn-outline-primary read-more-btn">Baca Selengkapnya</button>
+              <h3>{{ $stories->title }}</h3>
+              <p class="story-age">{{$stories->author->name}}</p>
+              <p class="story-text"> {{ Str::limit(strip_tags($stories->content), 100, ' ...') }}</p>
+              <button class="btn btn-sm btn-outline-primary read-more-btn" onclick="location.href='{{ route('stories.show', $stories->id) }}'">Baca Selengkapnya</button>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-3">
+        @endforeach
+        {{-- <div class="col-lg-4 col-md-6 mb-3">
           <div class="story-card">
             <div class="story-image">
               <img src="https://images.unsplash.com/photo-1522505449726-e148c41c2a8d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8" alt="Anak laki-laki melukis" class="img-fluid">
@@ -1461,10 +1463,10 @@
               <button class="btn btn-sm btn-outline-primary read-more-btn">Baca Selengkapnya</button>
             </div>
           </div>
-        </div>
+        </div> --}}
       </div>
       <div class="text-center mt-4">
-        <button class="btn btn-primary load-more-btn">Lihat Lebih Banyak Cerita</button>
+        <button class="btn btn-primary load-more-btn" onclick="location.href='{{ route('indexStories') }}'">Lihat Lebih Banyak Cerita</button>
       </div>
     </div>
   </section>

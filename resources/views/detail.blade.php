@@ -66,7 +66,7 @@
           </div>
         </div>
         <div class="bg-light rounded my-4 p-4">
-          <h4 class="mb-4">You Might Also Like</h4>
+          <h4 class="mb-4">Kamu Mungkin Juga Suka</h4>
           <div class="row g-4">
             @foreach ($randomStories as $stories)
             <div class="col-lg-6">

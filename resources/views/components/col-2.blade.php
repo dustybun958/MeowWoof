@@ -1,6 +1,6 @@
 <div class="recommendation-section p-4 bg-white rounded shadow-sm mb-4">
   <h4 class="mb-4 position-relative pb-3">
-    <span class="text-gradient">Recommended Stories</span>
+    <span class="text-gradient">Rekomendasi Cerita</span>
     <span class="position-absolute" style="height: 3px; width: 50px; background: var(--primary-color); bottom: 0; left: 0; border-radius: 10px;"></span>
   </h4>
 
@@ -29,7 +29,7 @@
   </div>
 
   <div class="text-center mt-4">
-    <a href="{{route('indexStories')}}" class="btn btn-sm btn-outline-primary px-4 py-2 rounded-pill">View All Stories</a>
+    <a href="{{route('indexStories')}}" class="btn btn-sm btn-outline-primary px-4 py-2 rounded-pill">Lihat Semua Cerita</a>
   </div>
 </div>
 
